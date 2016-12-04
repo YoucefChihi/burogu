@@ -1,0 +1,31 @@
+.post
+  display: flex
+  padding: 10px
+  background: white
+  transition: all 0.3s
+  cursor: pointer
+  align-items: center
+  &:hover
+    background: lightgray
+  .post-image
+    background: salmon
+    border-radius: 10%
+    height: 50px
+    width: 50px
+    display: inline-block
+  .post-content
+    padding-left: 10px
+    display: flex
+    flex-wrap: wrap
+    width: 100% - 50
+    align-items: center
+    .post-title
+      width: 100%
+      font-weight: 400
+    .post-subtitle
+      width: 100%
+      font-size: 0.9em
+.hr
+  display: block
+  height: 2px
+  background: lightgray

@@ -1,0 +1,33 @@
+.hero
+  height: 100vh
+  width: 100%
+  background:
+    image: url(https://c2.staticflickr.com/6/5584/14498448609_9bfbae004f_k.jpg)
+    size: cover
+    attachment: fixed
+    color: ivory
+  .headline
+    height: 100vh
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    font-size: 10em
+    font-weight: 400
+    background: teal
+    color: white
+    background: transparentize(black, 0.5)
+    .logo-wraper
+      animation: slide-down .6s ease-in-out
+      width: 100%
+      display: flex
+      justify-content: center
+      text-shadow: $shadow-1
+      img
+        width: 0.4em
+        height: 0.4em
+        margin-top: 0.48em
+        border: 0.07em solid white
+        border-radius: 50%
+        box-shadow: $shadow-2

@@ -1,0 +1,91 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400)
+@import "./constants"
+@import "./keyframes"
+
+@import "./components/Navigation"
+@import "./components/Hero"
+@import "./components/Article"
+@import "./components/About"
+@import "./components/Post"
+@import "./components/Tag"
+
+body
+  margin: 0
+  font-family: "Lato" , sans-serif
+  font-weight: 300
+  max-height: 100%
+
+$footer-height: 250px
+
+.root
+  .main
+    display: flex
+    padding-top: 50px
+    background:  #f1f1f1
+    margin-bottom: $footer-height
+    box-shadow: $shadow-1
+    .articles
+      width: 66.66%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      .recent
+        font-size: 2em
+        font-weight: 400
+        margin-bottom: 50px
+    .info
+      width: 33.34%
+      display: inline-block
+    .popular
+      display: inline-block
+      width: 93%
+      background: white
+      box-shadow: $shadow-1
+      margin-bottom: 50px
+      .popular-head
+        background: #eee
+        padding: 10px
+        font-size: 1.5em
+      .posts
+        background: lightgray
+    .tags
+      display: inline-block
+      width: 93%
+      background: white
+      box-shadow: $shadow-1
+      margin-bottom: 50px
+      .tags-head
+        background: #eee
+        padding: 10px
+        font-size: 1.5em
+      .tags-content
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        padding: 0px 10px
+        padding-top: 10px
+  .footer
+    background: gray
+    height: $footer-height
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 3em
+    color: #eee
+    position: fixed
+    bottom: 0
+    z-index: -1
+
+.root-test
+  height: 100vh
+  background: #eee
+  .holdup
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 10em
+    text-transform: uppercase

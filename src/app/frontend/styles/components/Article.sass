@@ -1,0 +1,45 @@
+.article
+  width: 93%
+  background: white
+  margin-bottom: 50px
+  box-shadow: $shadow-1
+  .article-image
+    max-height: 300px
+    background: #eee
+    overflow: hidden
+    img
+      width: 110%
+      margin-left: -5%
+      height: auto
+  .article-head
+    padding: 0px 10px
+    h3, h5
+      margin: 20px 0px
+    .article-title
+      font-size: 2em
+    .article-subtitle
+      font-size: 1.2em
+      .article-date
+        opacity: 0.5
+  .article-snippet
+    padding: 5px 10px
+    font-weight: 300
+    line-height: 1.5
+  .article-footer
+    padding: 10px
+    font-weight: 400
+    .article-more
+      display: inline-block
+      border: 1px solid black
+      background: white
+      cursor: pointer
+      padding: 5px 10px
+      transition: all .3s
+      &:hover
+        background: gray
+        border-color: gray
+        color: white
+    .article-comments
+      display: inline-block
+      float: right
+      margin-right: 10px
